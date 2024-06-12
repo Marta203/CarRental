@@ -1,35 +1,103 @@
 {% extends "base.html.jinja" %}
+{% load static %}
 {% block content %}
-    <h2>Lista samochodów</h2>
-    <div class="container mb-3 mt-3"> 
-    {% for category in categories %}
-        <h3>{{category}}</h3>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-        {% for car in cars %}
-            {% if car.category == category %}
-            <div class="col">
-                <div class="card text-center">
-                    <div class="card-header">
-                        {{car.brand}} {{car.model}}
+        <section class="bg-light py-5 border-bottom" id="Samochody">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Wybierz samochód</h2>
+                    <p class="lead mb-0">W pełni dopasowany do twoich potrzeb</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card mb-5 mb-xl-0">
+                            <div class="card-body p-5">
+                                <div class="small text-uppercase fw-bold text-muted">Werjsa ekonomiczna</div>
+                                <img src="{% static 'assets/swift-hybrid.png' %}" class="card-img-top" alt="Suzuki Swift">
+                                <div class="mb-3">
+                                    <h2 class="h4 fw-bolder">Suzuki Swift</h2>
+                                    <span class="display-4 fw-bold">100 zł</span>
+                                    <span class="text-muted">/ dzień.</span>
+                                </div>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>5-osobowy</strong>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Paliwo - PB/ON/HEV
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Skrzynia biegów manualna
+                                    </li>
+                                </ul>
+                                <div class="d-grid"><a class="btn btn-outline-primary" href="/rental/car/1">Wybierz</a></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <p class="card-text">Silnik <span class="badge text-bg-primary rounded-pill">{{car.engine_type}}</span></p>
-                        <p class="card-text">Liczba osób <span class="badge text-bg-primary rounded-pill">{{car.seats_count}}</span></p>
-                        <a href="{% url 'rent' car_id=car.id %}" class="btn btn-primary">Wypożycz</a>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card mb-5 mb-xl-0">
+                            <div class="card-body p-5">
+                                <div class="small text-uppercase fw-bold">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    Wybór klientów
+                                </div>
+                                <img src="{% static 'assets/dacia_jogger.png' %}" class="card-img-top" alt="Dacia Jogger">
+                                <div class="mb-3">
+                                    <h2 class="h4 fw-bolder">Dacia Jogger</h2>
+                                    <span class="display-4 fw-bold">200 zł</span>
+                                    <span class="text-muted">/ dzień.</span>
+                                </div>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>7-osobowy</strong>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Paliwo - ON/PB/LPG
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Skrzynia biegów manualna
+                                    </li>
+                                </ul>
+                                <div class="d-grid"><a class="btn btn-primary" href="/rental/car/1">Wybierz</a></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-footer text-body-secondary">
-                        2 days ago
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body p-5">
+                                <div class="small text-uppercase fw-bold text-muted">Wersja luksusowa</div>
+                                <img src="{% static 'assets/toyota-proace-verso.png' %}" class="card-img-top" alt="Toyota Proace 9-osobowa">
+                                <div class="mb-3">
+                                    <h2 class="h4 fw-bolder">Toyota Proace</h2>
+                                    <span class="display-4 fw-bold">300 zł</span>
+                                    <span class="text-muted">/ dzień.</span>
+                                </div>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>9-osobowy</strong>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Paliwo - ON
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Skrzynia biegów manualna
+                                    </li>
+                                </ul>
+                                <div class="d-grid"><a class="btn btn-outline-primary" href="/rental/car/1">Wybierz</a></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            {% endif %}
-        {% endfor %}
-    </div>
-    {% endfor %}
-    </div>
-    <div class="container mb-3 mt-3">
-        {{cars2 | safe}}
-    </div>
+        </section>
 {% endblock content %}
 {% block script %}
     <script>let table = new DataTable('#cars2');</script>
