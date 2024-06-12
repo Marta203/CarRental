@@ -1,4 +1,223 @@
 {% extends "base.html.jinja" %}
 {% block content %}
-    <h2>Strona główna</h2>
+    <body>
+        <header class="bg-dark py-5">
+            <div class="container px-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="text-center my-5">
+                            <h1 class="display-5 fw-bolder text-white mb-2">Wypożycz samochód</h1>
+                            <p class="lead text-white-50 mb-4">Komfortowe i bezpieczne podróże na każdą okazję - Wypożyczalnia samochodów z szerokim wyborem pojazdów, atrakcyjnymi cenami i profesjonalną obsługą, aby Twoja podróż była niezapomniana.</p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Dowiedz się więcej</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="py-5 border-bottom" id="features">
+            <div class="container px-5 my-5">
+                <div class="row gx-5">
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="text-center mb-5 feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-collection"></i></div>
+                        <h2 class="h4 fw-bolder">Różnorodność</h2>
+                        <p>Oferujemy szeroki wybór samochodów. Wszystkie nasze pojazdy są regularnie serwisowane i utrzymywane w doskonałym stanie technicznym, aby zapewnić komfort i bezpieczeństwo na drodze.</p>
+                    </div>
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <div class="text-center mb-5 feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-building"></i></div>
+                        <h2 class="h4 fw-bolder">Elastyczność</h2>
+                        <p>Dostosowujemy nasze usługi do Twoich potrzeb. Oferujemy elastyczne warunki wynajmu, w tym krótkoterminowe i długoterminowe opcje, bez ukrytych kosztów i z przejrzystymi umowami.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="text-center mb-5 feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-toggles2"></i></div>
+                        <h2 class="h4 fw-bolder">Profesjonalizm</h2>
+                        <p>Oferujemy całodobowe wsparcie klienta, aby odpowiedzieć na wszelkie pytania, rozwiązać ewentualne problemy i uczynić Twoje doświadczenie wynajmu samochodu jak najbardziej komfortowym.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light py-5 border-bottom" id="Samochody">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Wybierz samochód</h2>
+                    <p class="lead mb-0">W pełni dopasowany do twoich potrzeb</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card mb-5 mb-xl-0">
+                            <div class="card-body p-5">
+                                <div class="small text-uppercase fw-bold text-muted">Werjsa ekonomiczna</div>
+                                <img src="assets/swift-hybrid.png" class="card-img-top" alt="Suzuki Swift">
+                                <div class="mb-3">
+                                    <h2 class="h4 fw-bolder">Suzuki Swift</h2>
+                                    <span class="display-4 fw-bold">100 zł</span>
+                                    <span class="text-muted">/ dzień.</span>
+                                </div>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>5-osobowy</strong>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Paliwo - PB/ON/HEV
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Skrzynia biegów manualna
+                                    </li>
+                                </ul>
+                                <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Wybierz</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card mb-5 mb-xl-0">
+                            <div class="card-body p-5">
+                                <div class="small text-uppercase fw-bold">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    Wybór klientów
+                                </div>
+                                <img src="assets/dacia_jogger.png" class="card-img-top" alt="Dacia Jogger">
+                                <div class="mb-3">
+                                    <h2 class="h4 fw-bolder">Dacia Jogger</h2>
+                                    <span class="display-4 fw-bold">200 zł</span>
+                                    <span class="text-muted">/ dzień.</span>
+                                </div>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>7-osobowy</strong>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Paliwo - ON/PB/LPG
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Skrzynia biegów manualna
+                                    </li>
+                                </ul>
+                                <div class="d-grid"><a class="btn btn-primary" href="#!">Wybierz</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="card">
+                            <div class="card-body p-5">
+                                <div class="small text-uppercase fw-bold text-muted">Wersja luksusowa</div>
+                                <img src="assets/Toyota-Proace-Verso.png" class="card-img-top" alt="Toyota Proace 9-osobowa">
+                                <div class="mb-3">
+                                    <h2 class="h4 fw-bolder">Toyota Proace</h2>
+                                    <span class="display-4 fw-bold">300 zł</span>
+                                    <span class="text-muted">/ dzień.</span>
+                                </div>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        <strong>9-osobowy</strong>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Paliwo - ON
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-check text-primary"></i>
+                                        Skrzynia biegów manualna
+                                    </li>
+                                </ul>
+                                <div class="d-grid"><a class="btn btn-outline-primary" href="#!">Wybierz</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 border-bottom" id="opinie">
+            <div class="container px-5 my-5 px-5">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bolder">Opinie klientów</h2>
+                    <p class="lead mb-0">Sprawdź odczucia osób, które postanowiły nam zaufać</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="card mb-4">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                                    <div class="ms-4">
+                                        <p class="mb-1">Wypożyczalnia samochodów u Marty to świetny wybór. Szeroki wybór nowoczesnych pojazdów w doskonałym stanie technicznym. Elastyczne warunki wynajmu bez ukrytych kosztów. Profesjonalna, całodobowa obsługa klienta. Zdecydowanie polecam!</p>
+                                        <div class="small text-muted">- Barbara Kapibara, Zakopane</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body p-4">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                                    <div class="ms-4">
+                                        <p class="mb-1">Wypożyczalnia samochodów u Marty to niezawodność i komfort w jednym. Szeroki wybór zadbanych pojazdów oraz elastyczne, przejrzyste warunki wynajmu. Profesjonalna obsługa klienta dostępna przez całą dobę sprawia, że korzystanie z ich usług to czysta przyjemność.</p>
+                                        <div class="small text-muted">- Justyna Orzeszkowa, Nowy Targ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-light py-5" id="contact">
+            <div class="container px-5 my-5 px-5">
+                <div class="text-center mb-5">
+                    <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
+                    <h2 class="fw-bolder">Zostańmy w kontakcie</h2>
+                    <p class="lead mb-0">Jeśli masz pytania, zostaw nam wiadomość, a my skontaktujemy się z tobą</p>
+                </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-6">
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Imię</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">Imię jest wymagane.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Adres email</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">Adres email jest wymagany.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Adres email jest niepoprawny.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">Numer telefonu</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">Numer telefonu jest wymagany.</div>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Wiadomość</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">Wiadomość jest wymagana.</div>
+                            </div>
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Wiadmość wysłana!</div>
+                                </div>
+                            </div>
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Błąd w wysyłaniu wiadomości!</div></div>
+                            <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Wyślij</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="py-5 bg-dark">
+            <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Marta Stuglik, Akademia Nauk Stosowanych w Nowym Targu</p></div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
+
 {% endblock content %}
